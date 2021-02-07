@@ -1,0 +1,33 @@
+<div class="nav">
+  <div class="navbar">
+    <div class="navbar-left">
+      <a routerLink='/'>
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt=""
+          class="navbar-left-img">
+      </a>
+    </div>
+    <div class="navbar-search">
+      <input class="navbar-search-input" [(ngModel)]="search" (focus)="searchFocus()" (focusout)="searchFocusOut()" />
+      <mat-icon
+        [ngClass]="(search.length>0 || focus) ? 'navbar-search-icon-search active' : 'navbar-search-icon-search'">search
+      </mat-icon>
+      <mat-icon class='navbar-search-icon-cancel' (click)="clearSearch()">
+        cancel</mat-icon>
+      <span class="navbar-search-placeholder" *ngIf="search.length < 1">Search</span>
+    </div>
+    <div class="navbar-right">
+      <a routerLink='/'>
+        <mat-icon class='navbar-right-icon'>home</mat-icon>
+      </a>
+      <a routerLink='/'>
+        <mat-icon class='navbar-right-icon'>message</mat-icon>
+      </a>
+      <a routerLink='/'>
+        <mat-icon class='navbar-right-icon'>explore</mat-icon>
+      </a>
+      <a routerLink='/'>
+        <mat-icon class='navbar-right-icon'>favorite</mat-icon>
+      </a>
+    </div>
+  </div>
+</div>

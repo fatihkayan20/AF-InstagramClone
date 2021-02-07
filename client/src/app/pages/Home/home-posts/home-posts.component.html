@@ -1,0 +1,21 @@
+<div class="posts-container">
+  <div class="post" *ngFor="let post of posts">
+    <div class="post-header">
+      <div class="post-header-left">
+        <img src={{post.user.imageUrl}} alt="" class="post-header-left-image">
+        <div class="post-header-left-username"> {{post.user.username}} </div>
+      </div>
+      <div class="post-header-right">
+        <mat-icon> more_horiz </mat-icon>
+      </div>
+    </div>
+    <img class="post-image" src={{post.imageUrl}} />
+    <div class="post-buttons">
+      <mat-icon> favorite </mat-icon>
+      <mat-icon> comment </mat-icon>
+      <mat-icon> send </mat-icon>
+    </div>
+    <div class="post-likes"> {{post.likeCount}} </div>
+    <div class="post-comments">{{post.commentCount}} </div>
+  </div>
+</div>

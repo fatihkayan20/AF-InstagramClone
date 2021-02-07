@@ -1,0 +1,27 @@
+.stories-container{
+    width: 90%;
+    max-width: 614px;
+    height: 118px !important;
+    background-color: #ffffff;
+    border: 1px solid #DBDBDB;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px;
+}
+
+.story{
+    margin-right: 10px;
+    
+    
+    &-avatar{
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+    }
+
+    &-username{
+        text-align: center;
+    }
+}

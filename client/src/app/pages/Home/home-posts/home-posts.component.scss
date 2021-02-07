@@ -1,0 +1,37 @@
+.posts-container{
+    width: 90%;
+    max-width: 614px;
+    background-color: #ffffff;
+    border: 1px solid #DBDBDB;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px;
+}
+
+.post{
+    width: 100%;
+
+    &-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        &-left{
+            display: flex;
+            align-items: center;
+
+            &-image{
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+    }
+
+    &-image{
+        width: 100%;
+    }
+}

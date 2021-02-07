@@ -1,0 +1,7 @@
+<div class="story-page">
+  <div *ngFor="let user of stories | keyvalue; let i = index;" class="user-story"
+    [ngStyle]="{'transform': 'translate(' + (i- active)*109  + 'px) scale(0.4) '} ">
+    <app-story-container [user]="user" (nextStory)="nextStory($event, stories[i+1][0].username , stories[i+1][0].id)">
+    </app-story-container>
+  </div>
+</div>

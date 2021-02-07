@@ -1,0 +1,7 @@
+<div class="stories-container">
+  <div *ngFor="let story of stories | keyvalue" class="story"
+    [routerLink]="['/stories' ,story.value[0].username , story.value[0].id]">
+    <img class="story-avatar" src={{story.value[0].imageUrl}} alt="" />
+    <div> {{story.value[0].username}}</div>
+  </div>
+</div>

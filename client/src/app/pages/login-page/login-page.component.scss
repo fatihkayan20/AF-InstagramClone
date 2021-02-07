@@ -1,0 +1,74 @@
+.main{
+    background: #fafafa;
+    width: 100%;
+    padding-top: 100px;
+    height: 85vh;
+}
+
+.login-container{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    padding: 10px 0;
+
+
+    &-logo{
+        width: 50%;
+        margin: 22px auto;
+    }
+
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+
+        &-input{
+            width: 250px;
+            margin: 10px auto;
+            height: 40px;
+            background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+
+            &:focus{
+                background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+            }
+            
+        }
+        &-button{
+            width: 260px;
+            margin: 10px auto;
+            background-color: #0095F6;
+            height: 30px;
+        }
+    }
+
+    &-hror{
+        width: 250px;
+        margin: 10px auto;
+        display: flex;
+
+        &-hr{
+            width: 110px;
+            background-color: #8e8e8e;
+            height: 1px;        }
+
+        &-or{
+            margin: auto 10px;
+            color: #8e8e8e;
+        }
+    }
+
+    &-lwfacebook ,
+    &-forgotPass
+    {
+        text-align: center;
+        color: #262626;
+    }
+    
+}
+

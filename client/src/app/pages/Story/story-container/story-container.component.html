@@ -1,0 +1,8 @@
+<div class="story-username">{{user.value[0].username}}</div>
+<div class="story-details">
+  <div class="story-detail" *ngFor=" let story of user.value; let i = index"
+    [style.margin-left.px]="i*398 - slide * 398" (click)="nextClick(user.value[i+1]?.id)">
+    <img class="story-detail-image" src={{story.imageUrl}} alt="">
+    <div class="story-detail-date"> {{story.time}} </div>
+  </div>
+</div>
